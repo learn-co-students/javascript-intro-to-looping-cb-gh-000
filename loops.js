@@ -11,7 +11,7 @@ function forLoop(array) {
 
 function whileLoop(number) {
   while (number > 0) {
-    console.log(number--);
+    console.log(--number);
   }
   return "done";
 }
@@ -22,6 +22,6 @@ function doWhileLoop(arr) {
   }
   do {
     array.pop();
-  } while(maybeTrue() && array.length > 0);
-  retuan array;
+  } while (maybeTrue() && array.length > 0);
+  return array;
 }
