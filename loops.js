@@ -16,12 +16,12 @@ function whileLoop(number) {
   return "done";
 }
 
-function doWhileLoop(arr) {
+function doWhileLoop(array) {
   function maybeTrue() {
     return Math.random() >= 0.5
   }
   do {
     array.pop();
-  } while (maybeTrue() && array.length > 0);
+  } while (maybeTrue() && array.length > -1);
   return array;
 }
